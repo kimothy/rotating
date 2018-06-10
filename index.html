@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chartset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>tacho362</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>tacho 362</h1>
+    </header>
+    <main>
+        <div class = "grid-container">
+            <div class = "grid-item"> Bit </div>
+            <div class = "grid-item"> <input class="inputBox" type="number" id="D" oninput="c()"  value="76"> </div>
+            <div class = "grid-item"> mm </div>
+            <div class = "grid-item"> Button </div>
+            <div class = "grid-item">  <input class="inputBox" type="number" id="d" oninput="c()" step="0.1"  value="12.7"> </div>
+            <div class = "grid-item" id="od"> mm </div>
+            <div class = "grid-item"> Frequency </div>
+            <div class = "grid-item"> <input class="inputBox" type="number" id="f" oninput="c()"  value="55"> </div>
+            <div class = "grid-item"> Hz </div>
+            <div class = "grid-item"> Rotation </div>
+            <div class = "grid-item">  <div id="progress"> <div id="bar" ></div> </div> </div>
+            <div class = "grid-item"> rpm </div>
+        </div>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>

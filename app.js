@@ -12,13 +12,21 @@ window.addEventListener('load', async e =>{
     c();
 });
 
+
 function c(){
     const D = document.getElementById("D").value;
     const d = document.getElementById("d").value;
     const f = document.getElementById("f").value;
-    const r = 60 * f *5 / 6 * d / D / 3.14; 
+    const s = document.getElementById("s").value;
+    const r = Math.round(60 * f * eval(s) * d / D / 3.14); 
+
+    document.querySelector('#oD').value = D + "mm";
+    document.querySelector('#od').value = d + "mm";
+    document.querySelector('#of').value = f + "hz";
+
 
     var _r = r * 100/350;
+ 
     if (_r >= 100) { _r = 100;}
 
     document.getElementById("bar").style.width = _r + '%';

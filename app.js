@@ -9,6 +9,7 @@ window.addEventListener('load', async e =>{
         }
     }
 
+    /* make first calculation på range defaults*/
     c();
 });
 
@@ -21,23 +22,31 @@ window.addEventListener('fetch', function(event) {
   );
 });
 
+function i(){
+    const D = document.getElementById("oD").value;
+    const d = document.getElementById("od").value;
+    const f = document.getElementById("of").value;
+    const s = document.getElementById("s").value;
+    o(D, d, f, s);
+}
 
 function c(){
     const D = document.getElementById("D").value;
     const d = document.getElementById("d").value;
     const f = document.getElementById("f").value;
     const s = document.getElementById("s").value;
+    o(D, d, f, s);
+}
+
+function o(D, d, f, s){
+    document.querySelector('#oD').value = D;
+    document.querySelector('#od').value = d;
+    document.querySelector('#of').value = f;
+
+    document.getElementById("D").value = D;
+    document.getElementById("d").value = d;
+    document.getElementById("f").value = f;
+
     const r = Math.round(60 * f * eval(s) * d / D / 3.14); 
-
-    document.querySelector('#oD').value = D + "mm";
-    document.querySelector('#od').value = d + "mm";
-    document.querySelector('#of').value = f + "hz";
-
-
-    var _r = r * 100/350;
- 
-    if (_r >= 100) { _r = 100;}
-
-    document.getElementById("bar").style.width = _r + '%';
     document.getElementById("bar").innerHTML = Math.round(r);
 }

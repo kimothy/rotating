@@ -1,3 +1,12 @@
+:root {
+    --color-theme:           rgb(255,199,54);
+    --color-theme-highlight: rgb(255,220,100);
+    --color-theme-shade:     #c39200;
+    --color-font:            rgb(150, 150, 150);
+    --color-background:      rgba(250, 250, 250, 0.8);
+}
+
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 300;
@@ -13,15 +22,7 @@ h1 {
     text-align:center;
     text-transform: uppercase;
     font-weight: 400;
-    color: rgb(150, 150, 150);
-  }
-  
-header {
-    #display: flex;
-    #justify-content: space-between;
-    #align-items: center;
-    #flex-wrap: wrap;
-    #background-color: rgb(50, 50, 50);
+    color: var(--color-font);
   }
   
 main {
@@ -32,7 +33,7 @@ main {
 select {
     -webkit-appearance: none; 
     -moz-appearance: none;
-    color:  rgb(150, 150, 150);
+    color: var(--color-font);
     background-color: rgb(245, 245, 245);
     border: none;
     justify-content: center;
@@ -115,12 +116,11 @@ width: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 40pt;
     font-weight: 400;
-height: 100%;
-#background-color:rgb(255,199,54);
-text-align: center;
-line-height: 30px;
-color: rgb(130, 130, 130);
-border-radius: 10px;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(130, 130, 130);
+    border-radius: 10px;
 }
 
 
@@ -139,9 +139,9 @@ input[type='range']::-webkit-slider-thumb {
   height: 16px;
   width: 16px;
   border-radius: 8px;
-  background: rgb(255,199,54);
+  background: var(--color-theme);
   cursor: pointer;
-  box-shadow: 1px 1px 1px #c39200, 0px 0px 1px #c39200;
+  box-shadow: 1px 1px 1px var(--color-theme-shade), 0px 0px 1px var(--color-theme-shade);
   margin-top: -8px;
 }
 
@@ -166,7 +166,7 @@ input[type=range]::-moz-range-thumb {
   #height: 36px;
   #width: 16px;
   #border-radius: 3px;
-  background: rgb(255,199,54);
+  background: var(--color-theme);
   cursor: pointer;
 }
 
@@ -180,6 +180,7 @@ input[type=range]::-moz-range-track {
   border: 1px solid rgb(235,235,235);
 }
 
+
 input[type=range]:-moz-focusring{
     outline: 1px solid rgb(235,235,235);
     outline-offset: -1px;
@@ -189,6 +190,17 @@ input[type=range]:focus::-moz-range-track {
     background: rgb(235,235,235);
 }
 
+input[type=range]:focus::-moz-range-progress {
+    background: var(--color-theme-highlight);
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background-color: var(--color-theme-highlight); 
+}
+
+input[type=-'range']:focus::-webkit-progress-value {
+  background-color: var(--color-theme-highlight);
+}
 
 
 .slider:hover {

@@ -12,6 +12,15 @@ window.addEventListener('load', async e =>{
     c();
 });
 
+/* online first, fallback to cache */
+window.addEventListener('fetch', function(event) {
+  event.respondWith(
+    fetch(event.request).catch(function() {
+      return caches.match(event.request);
+    })
+  );
+});
+
 
 function c(){
     const D = document.getElementById("D").value;

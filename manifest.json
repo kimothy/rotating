@@ -3,7 +3,7 @@
   "short_name": "t362",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
-  "display": "standalone",
+  "display": "fullscreen",
   "Scope": "/t362/",
   "start_url": "/t362/",
   "icons": [

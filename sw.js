@@ -15,8 +15,7 @@ self.addEventListener('fetch', event => {
 }); 
 
 async function cacheFirst(req) {
-   /* const cachedResponse = await caches.match(req);
-    return fetch(req)  || cachedResponse; 
-   */
-    return fetch(req)
+    
+    const cachedResponse = await caches.match(req);
+    return cachedResponse ||  fetch(req);
 };

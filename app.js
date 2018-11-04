@@ -71,6 +71,4 @@ function o(D, d, f, s){
 
     const r = Math.round(60 * f * eval(s) * d / D / 3.14); 
     document.getElementById("bar").innerHTML = Math.round(r);
-
-    t();
 }

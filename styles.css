@@ -120,11 +120,11 @@ input {
 }
     
 .input-range {
-    width: 68%;
+    width: 65%;
 }
 
 .input-float {
-    width: 12%;
+    width: 15%;
     text-align: right;
     background-color: none;
 }

@@ -20,25 +20,23 @@ body {
 
 
 canvas{
-
     width: 50px;
     height:50px ;
     border-radius: 50%;
-     position: relative;
-     animation-direction: right;
-     animation-timing-function: linear;
+    position: relative;
+    animation-direction: right;
+    animation-timing-function: linear;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
     animation-duration: 0s;
     animation-name: example;
     animation-iteration-count: infinite;
     background-color:  rgb(255,220,100);
-    
 }
 
 @keyframes example {
     0%   {left: -35%; top:  0%; background-color: rgb(245, 245, 245);}
-    15%  {left:   0%; top: 100%; background-color:  rgb(255,220,100)}
+    15%  {left:   0%; top: 70%; background-color:  rgb(255,220,100)}
     30%  {left:  35%; top:  0%; background-color: rgb(245, 245, 245);}
     100% {left: -35%; top:  0%;}
 }

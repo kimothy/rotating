@@ -22,6 +22,27 @@ window.addEventListener('fetch', function(event) {
   );
 });
 */
+var anim = false;
+
+function t() {
+    var a = document.getElementById("tacho");
+    var r = document.getElementById("bar").innerHTML;
+    var t = 1 / eval(r) * 60;
+
+    console.log(anim);
+    
+    if (anim == true) {
+	a.style.animationDuration = t + "s";
+    }
+    else{
+	a.style.animationDuration = "0s";
+    }
+    
+}
+
+function a() {
+    anim = !anim;
+}
 
 function i(){
     const D = document.getElementById("oD").value;
@@ -50,4 +71,6 @@ function o(D, d, f, s){
 
     const r = Math.round(60 * f * eval(s) * d / D / 3.14); 
     document.getElementById("bar").innerHTML = Math.round(r);
+
+    t();
 }

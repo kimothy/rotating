@@ -13,7 +13,6 @@ window.addEventListener('load', async e =>{
     c();
 });
 
-/* online first, fallback to cache */
 /*
 window.addEventListener('fetch', function(event) {
   event.respondWith(

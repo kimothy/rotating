@@ -19,19 +19,19 @@
 	  <div class = "grid-item">
 	    <label class="input-label" for="D">Bit</label>
 	    <input class="input-range" tabindex="-1" type="range" id="D" min="40" value="76" max="130" step="1" oninput="c()" onchange="t()"> 
-	    <input class="input-float" type="number" min="1" max="999" step="1"id="oD" onchange="i()"></input>
+	    <input class="input-float" type="number" min="1" max="999" step="1"id="oD" onchange="i();t()"></input>
 	    <label class="unselectable" for="oD">mm</label>
 	  </div>
           <div class = "grid-item">
 	    <label class="input-label" for="d">Button</label>
 	    <input class="input-range" type="range" tabindex="-1" id="d" min="6" value="12.7" max="20" step="0.1" oninput="c()" onchange="t()">
-	    <input class="input-float" type="number" min="1" max="999" step="0.1" id="od" onchange="i()"></input>
+	    <input class="input-float" type="number" min="1" max="999" step="0.1" id="od" onchange="i();t()"></input>
 	    <label class="unselectable" for="od">mm</label>
 	  </div>
 	  <div class="grid-item">
 	    <label class="input-label" for="f">Frequency</label>
             <input class="input-range" type="range" tabindex="-1" id="f" min="30" value="55" max="150" step="1" oninput="c()" onchange="t()">
-	    <input class="input-float" type="number" min="0" max="999" step="1" id="of" onchange="i()"></input>
+	    <input class="input-float" type="number" min="0" max="999" step="1" id="of" onchange="i();t()"></input>
 	    <label class="unselectable" for="of">Hz</label>
 	  </div>
 	  <div>

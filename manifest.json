@@ -4,8 +4,8 @@
   "theme_color": "rgb(255,199,54)",
   "background_color": "rgb(120, 120, 120)",
   "display": "standalone",
-  "Scope": "./t362/",
-  "start_url": "./t362/",
+  "Scope": "/t362/",
+  "start_url": "/t362/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",

@@ -37,10 +37,10 @@ canvas{
 }
 
 @keyframes example {
-    0%     {left: -35%; background-color: rgb(245, 245, 245);}
-    15%   { left: 0%; background-color:  rgb(255,220,100)}
-    30%    {left: 35%;background-color: rgb(245, 245, 245);}
-    100%    {left: -35%}
+    0%   {left: -35%; top:  0%; background-color: rgb(245, 245, 245);}
+    15%  {left:   0%; top: 100%; background-color:  rgb(255,220,100)}
+    30%  {left:  35%; top:  0%; background-color: rgb(245, 245, 245);}
+    100% {left: -35%; top:  0%;}
 }
 
   

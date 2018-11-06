@@ -110,7 +110,7 @@ input {
 */
 
 .input-label {
-    width: 80%;
+    width: 75%;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -120,7 +120,7 @@ input {
 }
     
 .input-range {
-    width: 15%;
+    width: 20%;
     text-align: right;
 }
 

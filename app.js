@@ -8,20 +8,8 @@ window.addEventListener('load', async e =>{
             console.log(error);
         }
     }
-
-    /* make first calculation på range defaults*/
-    c();
 });
 
-/*
-window.addEventListener('fetch', function(event) {
-  event.respondWith(
-    fetch(event.request).catch(function() {
-      return caches.match(event.request);
-    })
-  );
-});
-*/
 var anim = false;
 
 function a() {
